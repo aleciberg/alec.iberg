@@ -1,0 +1,27 @@
+.alec {
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  display: block;
+}
+
+.about-me {
+  margin-top: 50px;
+  color: #3e505b;
+}
+
+p {
+  width: 500px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.target {
+  color: #6f1d1b;
+  font-weight: bold;
+}
+
+.outdoors {
+  color: #65946a;
+  font-weight: bold;
+}
