@@ -1,7 +1,5 @@
 import LogoContainer from '../logo-container/logo.component';
 import SidebarLink from '../sidebar-link/sidebar-link.components';
-import banner from '../logo-container/construction.png';
-import alec from '../logo-container/handwritten.PNG';
 
 import './sidebar-links.styles.css';
 
@@ -17,7 +15,7 @@ const SidebarLinks = ({ activeLink, clickHandler }) => {
         {/* <img src={alec} alt={'Site is Under Construction'} /> */}
         <br></br>
         <br></br>
-        <h1>Alec Iberg</h1>
+        <h1></h1>
         <LogoContainer />
       </div>
       <div className="links-container">
