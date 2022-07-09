@@ -50,7 +50,7 @@ const ProjectItem = ({ title }) => {
   const currentProject = projects.find((project) => project.title === title);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} style={{ border: '2px solid #6F1D1B' }}>
       <CardMedia
         component={'img'}
         height="140"
@@ -81,7 +81,7 @@ const ProjectItem = ({ title }) => {
           variant={'contained'}
           href={currentProject.link}
           target={'_blank'}
-          sx={{ backgroundColor: '#3E505B', }}
+          sx={{ backgroundColor: '#3E505B' }}
         >
           GitHub
         </Button>
