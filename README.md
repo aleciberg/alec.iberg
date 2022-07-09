@@ -4,9 +4,8 @@
 
 ## TODO
 
-- Embed Resume onto Resume Tab
-- Create the Link Page
+- Mobile Friendly (Top Priority)
 - Enable Resume to be downloaded
-- Changelog
-- More Theming
+- Changelog Tab
+- Footer
 - LOGO
