@@ -1,4 +1,5 @@
 {
+  "homepage": "https://aleciberg.com",
   "name": "alec-website",
   "version": "0.5.0",
   "private": true,
@@ -30,7 +31,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://aleciberg.com",
   "browserslist": {
     "production": [
       ">0.2%",
