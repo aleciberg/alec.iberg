@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/alec.iberg/static/css/main.02409b8e.css",
-    "main.js": "/alec.iberg/static/js/main.d94428f1.js",
-    "static/js/787.eb3fd7ae.chunk.js": "/alec.iberg/static/js/787.eb3fd7ae.chunk.js",
-    "static/media/alec.jpeg": "/alec.iberg/static/media/alec.bd7d444ef5fbda5bbd38.jpeg",
-    "static/media/crwnclothing.png": "/alec.iberg/static/media/crwnclothing.9d64e51c0ca2629a6936.png",
-    "static/media/clicrypto.gif": "/alec.iberg/static/media/clicrypto.ff74f7c78b932a291ca2.gif",
-    "static/media/weatherApp.gif": "/alec.iberg/static/media/weatherApp.86b585cdec8a57ba9496.gif",
-    "static/media/moviefight.png": "/alec.iberg/static/media/moviefight.9d9c4c1359f2ec2f163a.png",
-    "static/media/React-icon.svg.png": "/alec.iberg/static/media/React-icon.svg.11b59729d3fa01935a5e.png",
-    "static/media/alecibergresume.pdf": "/alec.iberg/static/media/alecibergresume.e6ca6e388a0187590511.pdf",
-    "static/media/jest.png": "/alec.iberg/static/media/jest.79b8f15d58d326e3bf9c.png",
-    "static/media/node.png": "/alec.iberg/static/media/node.ed5c8001ae16b7817259.png",
-    "static/media/gitbash.png": "/alec.iberg/static/media/gitbash.ec41e4cb1f4b4cd4fea1.png",
-    "static/media/Redux.png": "/alec.iberg/static/media/Redux.543b98d3c75b48613322.png",
-    "static/media/typescript.png": "/alec.iberg/static/media/typescript.29073194eeda5803e7f3.png",
-    "static/media/js.png": "/alec.iberg/static/media/js.266bd9fb2663dcc057b4.png",
-    "index.html": "/alec.iberg/index.html",
-    "main.02409b8e.css.map": "/alec.iberg/static/css/main.02409b8e.css.map",
-    "main.d94428f1.js.map": "/alec.iberg/static/js/main.d94428f1.js.map",
-    "787.eb3fd7ae.chunk.js.map": "/alec.iberg/static/js/787.eb3fd7ae.chunk.js.map"
+    "main.css": "/static/css/main.02409b8e.css",
+    "main.js": "/static/js/main.455203ed.js",
+    "static/js/787.eb3fd7ae.chunk.js": "/static/js/787.eb3fd7ae.chunk.js",
+    "static/media/alec.jpeg": "/static/media/alec.bd7d444ef5fbda5bbd38.jpeg",
+    "static/media/crwnclothing.png": "/static/media/crwnclothing.9d64e51c0ca2629a6936.png",
+    "static/media/clicrypto.gif": "/static/media/clicrypto.ff74f7c78b932a291ca2.gif",
+    "static/media/weatherApp.gif": "/static/media/weatherApp.86b585cdec8a57ba9496.gif",
+    "static/media/moviefight.png": "/static/media/moviefight.9d9c4c1359f2ec2f163a.png",
+    "static/media/React-icon.svg.png": "/static/media/React-icon.svg.11b59729d3fa01935a5e.png",
+    "static/media/alecibergresume.pdf": "/static/media/alecibergresume.e6ca6e388a0187590511.pdf",
+    "static/media/jest.png": "/static/media/jest.79b8f15d58d326e3bf9c.png",
+    "static/media/node.png": "/static/media/node.ed5c8001ae16b7817259.png",
+    "static/media/gitbash.png": "/static/media/gitbash.ec41e4cb1f4b4cd4fea1.png",
+    "static/media/Redux.png": "/static/media/Redux.543b98d3c75b48613322.png",
+    "static/media/typescript.png": "/static/media/typescript.29073194eeda5803e7f3.png",
+    "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
+    "index.html": "/index.html",
+    "main.02409b8e.css.map": "/static/css/main.02409b8e.css.map",
+    "main.455203ed.js.map": "/static/js/main.455203ed.js.map",
+    "787.eb3fd7ae.chunk.js.map": "/static/js/787.eb3fd7ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02409b8e.css",
-    "static/js/main.d94428f1.js"
+    "static/js/main.455203ed.js"
   ]
 }
