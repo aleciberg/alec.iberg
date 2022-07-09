@@ -8,7 +8,6 @@ import movieFight from './moviefight.png';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 
 import { CardActions, CardContent, CardMedia } from '@mui/material';
 
@@ -78,7 +77,12 @@ const ProjectItem = ({ title }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button href={currentProject.link} target={'_blank'}>
+        <Button
+          variant={'contained'}
+          href={currentProject.link}
+          target={'_blank'}
+          sx={{ backgroundColor: '#3E505B', }}
+        >
           GitHub
         </Button>
       </CardActions>
