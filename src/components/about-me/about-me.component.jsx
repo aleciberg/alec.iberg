@@ -23,8 +23,9 @@ const AboutMe = () => {
           component="div"
           align="center"
         >
-          I am currently employed at Olive, working on the Olive Platform
-          application. Our stack includes{' '}
+          Hello, I am <span className={'outdoors'}>Alec Iberg</span> and I am a
+          Full Stack Developer. I am currently employed at Olive, working on the
+          Olive Platform application. Our stack includes{' '}
           <span className="target">TypeScript, React, NodeJS, and GoLang </span>
           and I am able to work in these everyday. I find great satisfaction in
           seeing my work produce <span className="target">meaningful </span> and
