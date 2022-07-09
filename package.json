@@ -30,7 +30,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://aleciberg.com",
+  "homepage": "http://aleciberg.github.io",
   "browserslist": {
     "production": [
       ">0.2%",
