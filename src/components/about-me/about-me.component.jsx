@@ -8,7 +8,7 @@ import './about-me.styles.css';
 
 const AboutMe = () => {
   return (
-    <Card sx={{ margin: 2 }}>
+    <Card sx={{ margin: 2 }} style={{ border: '2px solid #6F1D1B' }}>
       <CardMedia
         component={'img'}
         image={alec}
