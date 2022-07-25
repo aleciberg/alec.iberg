@@ -1,4 +1,5 @@
 import alec from './alec.jpeg';
+import alec2 from './alec2.jpg';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 
@@ -11,9 +12,9 @@ const AboutMe = () => {
     <Card sx={{ margin: 2 }} style={{ border: '2px solid #6F1D1B' }}>
       <CardMedia
         component={'img'}
-        image={alec}
+        image={alec2}
         alt={'picture of alec'}
-        style={{ height: '45vh', paddingTop: '' }}
+        style={{ height: '55vh', paddingTop: '' }}
       />
       <CardContent>
         <Typography
@@ -24,11 +25,14 @@ const AboutMe = () => {
           align="center"
         >
           Hello, I am <span className={'outdoors'}>Alec Iberg</span> and I am a
-          Full Stack Developer. I am currently employed at Olive, working on the
-          Olive Platform application. Our stack includes{' '}
+          Full Stack Developer.
+          <br></br>
+          <br></br>I was most recently employed at Olive, working on the Olive
+          Platform application. The stack included{' '}
           <span className="target">TypeScript, React, NodeJS, and GoLang </span>
-          and I am able to work in these everyday. I find great satisfaction in
-          seeing my work produce <span className="target">meaningful </span> and
+          and I was able to work in these everyday. I always find great
+          satisfaction in seeing my work produce{' '}
+          <span className="target">meaningful </span> and
           <span className="target"> measurable</span> results in the HealthCare
           space, a space I am very passionate about improving for everyone.{' '}
         </Typography>
