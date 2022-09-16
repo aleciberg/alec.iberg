@@ -9,3 +9,10 @@
 - Changelog Tab
 - Footer
 - LOGO
+
+
+## TO PUBLISH
+
+In Terminal: <br>
+`npm run predeploy` <br>
+`npm run deploy`
