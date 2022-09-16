@@ -10,9 +10,10 @@
 - Footer
 - LOGO
 
-
 ## TO PUBLISH
 
 In Terminal: <br>
 `npm run predeploy` <br>
 `npm run deploy`
+
+GH Pages Settings need to be `master` and have the correct custom domain.
