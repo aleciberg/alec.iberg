@@ -16,9 +16,16 @@ const Resume = () => {
 
   return (
     <div>
-      <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+      {/* <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
-      </Document>
+      </Document> */}
+      Not currently job hunting, resume available upon{' '}
+      <a
+        href="mailto: ibergalec@icloud.com"
+        style={{ color: '#65946a', fontWeight: 'bold' }}
+      >
+        request.
+      </a>
     </div>
   );
 };
