@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ContentContainer from './components/content-container/content-container.component';
 import SidebarLinks from './components/sidebar-links/sidebar-links.component';
+import HamburgerMenu from './components/hamburger-menu/hamburger-menu.component';
 
 function App() {
   const [activeContent, setActiveContent] = useState('About Me');
@@ -32,11 +33,14 @@ function App() {
   return (
     <div className="App">
       {isMobile ? (
-        <ContentContainer
-          activeContent={activeContent}
-          clickHandler={clickHandler}
-          isMobile={isMobile}
-        />
+        <>
+          <HamburgerMenu clickHandler={clickHandler}></HamburgerMenu>
+          <ContentContainer
+            activeContent={activeContent}
+            clickHandler={clickHandler}
+            isMobile={isMobile}
+          />
+        </>
       ) : (
         <>
           <SidebarLinks

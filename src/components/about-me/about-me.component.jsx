@@ -11,7 +11,7 @@ const AboutMe = ({ isMobile }) => {
     <Card
       sx={{ margin: 2 }}
       style={{
-        border: isMobile ? '10px solid red' : '1px solid black',
+        border: '1px solid black',
         width: isMobile ? '90vw' : '75vw',
         height: isMobile ? '90vh' : '95vh',
         marginTop: isMobile ? '60px' : '',
