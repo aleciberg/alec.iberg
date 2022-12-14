@@ -1,5 +1,4 @@
-import alec from './alec.jpeg';
-import alec2 from './alec2.jpg';
+import alec4 from './alecmountain.JPG';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 
@@ -9,12 +8,15 @@ import './about-me.styles.css';
 
 const AboutMe = () => {
   return (
-    <Card sx={{ margin: 2 }} style={{ border: '2px solid #6F1D1B' }}>
+    <Card
+      sx={{ margin: 2 }}
+      style={{ border: '2px solid #6F1D1B', maxHeight: 800, overflow: 'auto' }}
+    >
       <CardMedia
         component={'img'}
-        image={alec2}
+        image={alec4}
         alt={'picture of alec'}
-        style={{ height: '55vh', paddingTop: '' }}
+        style={{ height: '35vh', paddingTop: '' }}
       />
       <CardContent>
         <Typography

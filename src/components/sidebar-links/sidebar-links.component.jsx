@@ -13,9 +13,6 @@ const SidebarLinks = ({ activeLink, clickHandler }) => {
       <div className="logo-container">
         {' '}
         {/* <img src={alec} alt={'Site is Under Construction'} /> */}
-        <br></br>
-        <br></br>
-        <h1></h1>
         <LogoContainer />
       </div>
       <div className="links-container">
