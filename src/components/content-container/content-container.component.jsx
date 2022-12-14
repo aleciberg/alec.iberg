@@ -14,7 +14,7 @@ const ContentContainer = ({ activeContent, isMobile, clickHandler }) => {
     case 'Projects':
       return <Projects isMobile={isMobile} />;
     case 'Resume':
-      return <Resume />;
+      return <Resume isMobile={isMobile} />;
     case 'Links':
       return <Links />;
     case 'Hamburger Menu':

@@ -13,7 +13,7 @@ const AboutMe = ({ isMobile }) => {
       style={{
         border: '1px solid black',
         width: isMobile ? '90vw' : '75vw',
-        height: isMobile ? '90vh' : '95vh',
+        height: isMobile ? '80vh' : '95vh',
         marginTop: isMobile ? '60px' : '',
         overflow: 'auto',
       }}
