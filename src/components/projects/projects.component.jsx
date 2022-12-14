@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 
 import './projects.styles.css';
 
-const Projects = () => {
+const Projects = ({ isMobile }) => {
   const projectsToShow = [
     'CLI Crypto',
     'CRWN CLOTHING',
@@ -13,10 +13,20 @@ const Projects = () => {
   ];
 
   return (
-    <Grid container m={1} p={1} spacing={{ xs: 2, md: 3 }} columns={16}>
+    <Grid
+      container
+      m={1}
+      p={1}
+      spacing={{ xs: 1, md: 2 }}
+      columns={16}
+      style={{
+        margin: isMobile ? '35px' : '',
+        padding: isMobile ? '20px' : '',
+      }}
+    >
       {projectsToShow.map((project) => {
         return (
-          <Grid item xs={8}>
+          <Grid item xs={16} md={8} lg={8}>
             <ProjectItem title={project}></ProjectItem>
           </Grid>
         );
