@@ -16,7 +16,7 @@ const ContentContainer = ({ activeContent, isMobile, clickHandler }) => {
     case 'Resume':
       return <Resume isMobile={isMobile} />;
     case 'Links':
-      return <Links />;
+      return <Links isMobile={isMobile} />;
     case 'Hamburger Menu':
       return <HamburgerMenuDropdown clickHandler={clickHandler} />;
     default:

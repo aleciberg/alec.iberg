@@ -3,14 +3,21 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import Card from '@mui/material/Card';
 
-const Links = () => {
+const Links = ({ isMobile }) => {
   const handleDone = () => {
     console.log('done');
   };
 
   return (
     <>
-      <Card sx={{ marginTop: 16 }} style={{ border: '2px solid #6F1D1B' }}>
+      <Card
+        sx={{ marginTop: 16 }}
+        style={{
+          border: '2px solid #6F1D1B',
+          margin: isMobile ? '65px' : '',
+          padding: isMobile ? '20px' : '',
+        }}
+      >
         <CardContent sx={{ marginTop: 0 }}>
           <h1
             style={{

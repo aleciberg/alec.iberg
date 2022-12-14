@@ -1,17 +1,28 @@
-import '../sidebar-links/sidebar-links.styles.css';
-
 const HamburgerMenuDropdown = ({ clickHandler }) => {
   const links = ['About Me', 'Skills', 'Projects', 'Resume', 'Links'];
 
   return (
-    <div className="sidebar">
-      <div className="links-container">
+    <div
+      style={{
+        margin: '35px',
+        padding: '20px',
+      }}
+    >
+      <div>
         {' '}
         {links.map((name) => {
           return (
-            <li key={name} onClick={() => clickHandler(name)}>
+            <h1
+              key={name}
+              onClick={() => clickHandler(name)}
+              style={{
+                margin: '35px',
+                padding: '20px',
+                color: '#65946a',
+              }}
+            >
               {name}
-            </li>
+            </h1>
           );
         })}
       </div>
