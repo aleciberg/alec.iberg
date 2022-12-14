@@ -6,6 +6,8 @@ import redux from './Redux.png';
 import typescript from './typescript.png';
 import javascript from './js.png';
 import gitbash from './gitbash.png';
+import svelte from './svelte.png';
+import golang from './golang.png';
 
 import './skills.styles.css';
 
@@ -17,17 +19,26 @@ const Skills = () => {
     { name: 'TypeScript', image: typescript },
     { name: 'ReactJS', image: react },
     { name: 'JavaScript', image: javascript },
+    { name: 'Svelte', image: svelte },
     { name: 'NodeJS', image: node },
+    { name: 'Go', image: golang },
     { name: 'Jest', image: jest },
     { name: 'Redux', image: redux },
     { name: 'CI/CD', image: gitlab },
     { name: 'GitBash', image: gitbash },
   ];
   return (
-    <Grid container m={1} p={1} spacing={{ xs: 2, md: 3 }} columns={16}>
+    <Grid
+      container
+      sx={{ height: '20vh' }}
+      m={1}
+      p={1}
+      spacing={{ xs: 2, md: 1 }}
+      columns={4}
+    >
       {skills.map((skill) => {
         return (
-          <Grid item xs={4}>
+          <Grid item xs={4} md={2} lg={1}>
             <Skill skill={skill}></Skill>
           </Grid>
         );

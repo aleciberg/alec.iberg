@@ -1,7 +1,7 @@
 import AboutMe from '../about-me/about-me.component';
 import Projects from '../projects/projects.component';
 import Resume from '../resume/resume.component';
-import Skills from '../skills-component.jsx/skills-component';
+import Skills from '../skills-component/skills-component';
 import Links from '../links-component/links-component';
 
 const ContentContainer = ({ activeContent }) => {
