@@ -6,8 +6,6 @@ import './sidebar-links.styles.css';
 const SidebarLinks = ({ activeLink, clickHandler }) => {
   const links = ['About Me', 'Skills', 'Projects', 'Resume', 'Links'];
 
-  console.log('activelink in sidebar links is' + activeLink);
-
   return (
     <div className="sidebar">
       <div className="logo-container">

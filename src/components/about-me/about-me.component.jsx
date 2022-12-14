@@ -6,11 +6,17 @@ import { CardContent, CardMedia } from '@mui/material';
 
 import './about-me.styles.css';
 
-const AboutMe = () => {
+const AboutMe = ({ isMobile }) => {
   return (
     <Card
       sx={{ margin: 2 }}
-      style={{ border: '2px solid #6F1D1B', maxHeight: 800, overflow: 'auto' }}
+      style={{
+        border: isMobile ? '10px solid red' : '1px solid black',
+        width: isMobile ? '90vw' : '75vw',
+        height: isMobile ? '90vh' : '95vh',
+        marginTop: isMobile ? '60px' : '',
+        overflow: 'auto',
+      }}
     >
       <CardMedia
         component={'img'}
@@ -52,6 +58,7 @@ const AboutMe = () => {
           <span className={'outdoors'}> Juniper.</span> She is a 2 year old
           Border Collie with unlimited energy.
         </Typography>
+        <button onClick={() => console.log(isMobile)}>CLICK HERE</button>
       </CardContent>
     </Card>
   );

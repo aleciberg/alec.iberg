@@ -4,14 +4,10 @@ import Resume from '../resume/resume.component';
 import Skills from '../skills-component/skills-component';
 import Links from '../links-component/links-component';
 
-const ContentContainer = ({ activeContent }) => {
+const ContentContainer = ({ activeContent, isMobile }) => {
   switch (activeContent) {
     case 'About Me':
-      return (
-        <>
-          <AboutMe />
-        </>
-      );
+      return <AboutMe isMobile={isMobile} />;
     case 'Skills':
       return <Skills />;
     case 'Projects':
