@@ -58,7 +58,6 @@ const AboutMe = ({ isMobile }) => {
           <span className={'outdoors'}> Juniper.</span> She is a 2 year old
           Border Collie with unlimited energy.
         </Typography>
-        <button onClick={() => console.log(isMobile)}>CLICK HERE</button>
       </CardContent>
     </Card>
   );
