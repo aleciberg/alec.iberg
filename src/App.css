@@ -1,7 +1,0 @@
-.App {
-  display: flex;
-  grid-template-columns: minmax(150px, 300px) minmax(50%, auto) minmax(
-      150px,
-      300px
-    );
-}
