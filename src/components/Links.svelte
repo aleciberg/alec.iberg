@@ -20,7 +20,7 @@
 
 <style>
 	.written-line {
-		color: #65946a;
+		color: #57753f;
 		padding: 20px;
 	}
 
