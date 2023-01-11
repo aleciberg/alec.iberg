@@ -5,6 +5,8 @@
   import forest from '../_assets/forest.svg';
 
   export let currentPage = 'About Me';
+
+  export const prerender = true;
 </script>
 
 <div class="container">

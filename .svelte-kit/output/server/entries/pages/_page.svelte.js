@@ -293,8 +293,11 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { currentPage = "About Me" } = $$props;
+  const prerender = true;
   if ($$props.currentPage === void 0 && $$bindings.currentPage && currentPage !== void 0)
     $$bindings.currentPage(currentPage);
+  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
+    $$bindings.prerender(prerender);
   $$result.css.add(css);
   let $$settled;
   let $$rendered;
