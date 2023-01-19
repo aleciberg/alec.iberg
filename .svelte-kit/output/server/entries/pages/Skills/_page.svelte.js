@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as add_attribute, e as each, v as validate_component } from "../../../chunks/index.js";
+import { c as create_ssr_component, f as add_attribute, b as escape, e as each, d as null_to_empty, v as validate_component } from "../../../chunks/index.js";
 import { b as base } from "../../../chunks/shared.js";
 const Skill_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -15,7 +15,7 @@ const Skill = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".skills-container.svelte-oy57os{display:grid;overflow:scroll;gap:5px;grid-template-columns:auto auto auto}",
+  code: ".skills-container.svelte-eibj1x{display:grid;overflow:scroll;gap:5px;grid-template-columns:auto auto auto}.skills-container-small.svelte-eibj1x{display:grid;overflow:scroll;gap:5px;grid-template-columns:auto auto}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -56,9 +56,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     { name: "Node", image: "/images/node.png" }
   ];
   $$result.css.add(css);
-  return `<div class="${"skills-container svelte-oy57os"}">${each(skills, (skill) => {
-    return `<div class="${"skill svelte-oy57os"}">${validate_component(Skill, "Skill").$$render($$result, { skill }, {}, {})}
-		</div>`;
+  return `
+
+<div class="${escape(
+    null_to_empty("skills-container"),
+    true
+  ) + " svelte-eibj1x"}">${each(skills, (skill) => {
+    return `<div class="${"skill svelte-eibj1x"}">${validate_component(Skill, "Skill").$$render($$result, { skill }, {}, {})}
+    </div>`;
   })}
 </div>`;
 });

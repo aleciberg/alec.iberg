@@ -19,7 +19,7 @@
     </span>
     and very much enjoy this stack. I always find great satisfaction in seeing my
     work produce
-    <span class="target">meaningful </span>
+    <span class="target">Meaningful </span>
     and
     <span class="target"> measurable</span> results and I love being able to
     provide value to the FinTech space and improve access to credit for
@@ -57,6 +57,7 @@
     margin-top: 10px;
     font-size: 20px;
     overflow: scroll;
+    text-align: center;
   }
 
   .image {

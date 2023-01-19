@@ -10,6 +10,9 @@
   // @ts-ignore
   function clickHandler(link) {
     currentPage = link.target.innerText;
+    if (innerWidth < 600) {
+      displayDropdown = !displayDropdown;
+    }
   }
 
   const hamburgerClickHandler = () => {
@@ -38,8 +41,10 @@
   {#if displayDropdown}
     <div class="dropdown-container">
       {#each links as link}
-        <span class="dropdown" on:click={(link) => clickHandler(link)}
-          >{link}</span
+        <a
+          class="dropdown"
+          href={link === 'About' ? `${base}/` : `${base}/${link}`}
+          on:click={(link) => clickHandler(link)}>{link}</a
         >
       {/each}
     </div>
@@ -58,6 +63,7 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
   }
 
   .main-container {
@@ -131,6 +137,8 @@
     font-size: 20px;
     background-color: darkgrey;
     padding: 5px;
+    text-decoration: none;
+    color: #6f1d1b;
   }
 
   .button {
