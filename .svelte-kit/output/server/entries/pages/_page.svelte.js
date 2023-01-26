@@ -18,7 +18,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <span class="${"target svelte-mnbl14"}">JavaScript, TypeScript, Svelte, NodeJS, and GoLang${escape(" ")}</span>
     and very much enjoy this stack. I always find great satisfaction in seeing my
     work produce
-    <span class="${"target svelte-mnbl14"}">meaningful </span>
+    <span class="${"target svelte-mnbl14"}">Meaningful </span>
     and
     <span class="${"target svelte-mnbl14"}">measurable</span> results and I love being able to
     provide value to the FinTech space and improve access to credit for
