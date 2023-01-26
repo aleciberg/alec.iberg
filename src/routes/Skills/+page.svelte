@@ -5,14 +5,14 @@
 
   const skills = [
     { name: 'TypeScript', image: '/images/typescript.png' },
-    { name: 'React', image: '/images/react.png' },
     { name: 'Svelte', image: '/images/svelte.png' },
+    { name: 'GoLang', image: '/images/golang.png' },
     { name: 'JavaScript', image: '/images/js.png' },
+    { name: 'React', image: '/images/react.png' },
     { name: 'Redux', image: '/images/Redux.png' },
     { name: 'Git', image: '/images/gitbash.png' },
     { name: 'CI/CD', image: '/images/gitlab-ci.png' },
     { name: 'Jest', image: '/images/jest.png' },
-    { name: 'GoLang', image: '/images/golang.png' },
     { name: 'Node', image: '/images/node.png' },
   ];
 </script>
