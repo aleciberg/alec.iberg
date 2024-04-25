@@ -6,7 +6,7 @@
   let innerWidth;
 
   $: active_image_class = innerWidth > 600 ? 'image-large' : 'image-small';
-  $: active_container_class = innerWidth > 600 ? 'image-large' : 'image-small';
+  $: active_container_class = innerWidth > 600 ? 'skill-container-large' : 'skill-container-small';
 </script>
 
 <svelte:window bind:innerWidth />
@@ -25,14 +25,14 @@
     width: 100px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 14px;
     overflow: hidden;
   }
   .skill-container-small {
     height: 175px;
     width: 175px;
-    display:s flex;
+    display: flex;
     justify-content: center;
     margin-top: 10px;
     border-radius: 14px;

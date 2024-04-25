@@ -1,50 +1,48 @@
 <script>
-  import { base } from '$app/paths';
-  import Title from '../lib/components/Title.svelte';
-  import Links from '../lib/components/Links.svelte';
-  import Bio from '../lib/components/Bio.svelte';
-  import Skills from '../lib/components/Skills.svelte';
-  import Projects from '../lib/components/Projects.svelte';
-  import Contact from '../lib/components/Contact.svelte';
+  import { base } from "$app/paths";
+  import Title from "../lib/components/Title.svelte";
+  import Links from "../lib/components/Links.svelte";
+  import Bio from "../lib/components/Bio.svelte";
+  import Skills from "../lib/components/Skills.svelte";
+  import Projects from "../lib/components/Projects.svelte";
+  import Contact from "../lib/components/Contact.svelte";
 </script>
 
-<div class="about-me-container">
-  <Links />
-  <Title />
-  <Bio />
-  <Skills />
+<div class="base-page-container">
+  <div class="top-level">
+    <Title />
+    <Links />
+  </div>
+  <div class="bio-container">
+    <Bio />
+  </div>
+  <div class="skills-container">
+    <Skills />
+  </div>
   <Projects />
   <Contact />
 </div>
 
-<!-- <style>
-  .target {
-    color: #6f1d1b;
-    font-weight: bold;
+<style>
+  .base-page-container {
+    border: 2px solid green;
+    /* width: 100vw;
+  overflow: hidden; */
+    display: flex;
+    flex-direction: column;
   }
 
-  .outdoors {
-    color: #57753f;
-    font-weight: bold;
+  .top-level {
+    display: flex;
+    flex-direction: row;
   }
 
-  .about-me-container {
-    /* height: 75vh; */
-    width: 90%;
-    margin-top: 10px;
-    font-size: 20px;
-    overflow: scroll;
-    text-align: center;
+  .bio-container {
+    width: 100%;
+    margin-top: 60px;
   }
 
-  .image {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+  .skills-container {
+    
   }
-
-  .image-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-</style> -->
+</style>
