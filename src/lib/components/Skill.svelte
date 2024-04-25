@@ -21,8 +21,8 @@
 
 <style>
   .skill-container-large {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -32,7 +32,7 @@
   .skill-container-small {
     height: 175px;
     width: 175px;
-    display: flex;
+    display:s flex;
     justify-content: center;
     margin-top: 10px;
     border-radius: 14px;
@@ -40,8 +40,8 @@
   }
 
   .image-large {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 
   .image-small {

@@ -24,51 +24,16 @@
 
 <svelte:window bind:innerWidth />
 
-{#if innerWidth > 600}
-  <div class="sidebar-container">
-    {#each links as link}
-      <a
-        class={link === currentPage ? 'selected' : 'link'}
-        href={link === 'About' ? `${base}/` : `${base}/${link}`}
-        on:click={(link) => clickHandler(link)}>{link}</a
-      >
-    {/each}
-  </div>
-{:else}
-  <div>
-    <!-- <button class="button" on:click={hamburgerClickHandler}>||||</button> -->
-    <button class="button-37" role="button" on:click={hamburgerClickHandler}
-      >Menu</button
-    >
-  </div>
-  {#if displayDropdown}
-    <div class="dropdown-container">
-      {#each links as link}
-        <a
-          class="dropdown"
-          href={link === 'About' ? `${base}/` : `${base}/${link}`}
-          on:click={(link) => clickHandler(link)}>{link}</a
-        >
-      {/each}
-    </div>
-  {/if}
-{/if}
-<!-- <div class="main-container">
-  <slot />
-</div> -->
-<div class={innerWidth < 600 ? 'main-container-small' : 'main-container'}>
-  <slot />
-</div>
+<slot />
 
 <style lang="postcss">
   :global(body) {
-    background-image: url(/images/forest.svg);
+    background-color: #222831;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
   }
-
+/* 
   .main-container {
     border-radius: 50px 50px 0 0;
     border: 3px solid #6f1d1b;
@@ -185,5 +150,5 @@
     .button-37 {
       padding: 10px 30px;
     }
-  }
+  } */
 </style>

@@ -27,7 +27,8 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
-	export const GREP_COLOR: string;
+	export const SPACESHIP_VERSION: string;
+	export const MANPATH: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
@@ -35,6 +36,7 @@ declare module '$env/static/private' {
 	export const SHELL: string;
 	export const TERM: string;
 	export const npm_config_metrics_registry: string;
+	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
 	export const TERM_PROGRAM_VERSION: string;
@@ -50,6 +52,7 @@ declare module '$env/static/private' {
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
+	export const SPACESHIP_CONFIG: string;
 	export const PAGER: string;
 	export const LSCOLORS: string;
 	export const PATH: string;
@@ -67,15 +70,19 @@ declare module '$env/static/private' {
 	export const XPC_FLAGS: string;
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
+	export const SPACESHIP_ROOT: string;
 	export const XPC_SERVICE_NAME: string;
 	export const SHLVL: string;
 	export const HOME: string;
+	export const HOMEBREW_PREFIX: string;
 	export const npm_config_cache: string;
 	export const LESS: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
+	export const INFOPATH: string;
+	export const HOMEBREW_CELLAR: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
 	export const NODE_ENV: string;
@@ -109,7 +116,8 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
-		GREP_COLOR: string;
+		SPACESHIP_VERSION: string;
+		MANPATH: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
@@ -117,6 +125,7 @@ declare module '$env/dynamic/private' {
 		SHELL: string;
 		TERM: string;
 		npm_config_metrics_registry: string;
+		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
 		TERM_PROGRAM_VERSION: string;
@@ -132,6 +141,7 @@ declare module '$env/dynamic/private' {
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
+		SPACESHIP_CONFIG: string;
 		PAGER: string;
 		LSCOLORS: string;
 		PATH: string;
@@ -149,15 +159,19 @@ declare module '$env/dynamic/private' {
 		XPC_FLAGS: string;
 		npm_config_node_gyp: string;
 		npm_package_version: string;
+		SPACESHIP_ROOT: string;
 		XPC_SERVICE_NAME: string;
 		SHLVL: string;
 		HOME: string;
+		HOMEBREW_PREFIX: string;
 		npm_config_cache: string;
 		LESS: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
+		INFOPATH: string;
+		HOMEBREW_CELLAR: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
 		NODE_ENV: string;
