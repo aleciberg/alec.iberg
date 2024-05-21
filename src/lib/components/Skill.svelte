@@ -1,12 +1,13 @@
 <script>
-  import { base } from '$app/paths';
+  import { base } from "$app/paths";
 
   export let skill;
 
   let innerWidth;
 
-  $: active_image_class = innerWidth > 600 ? 'image-large' : 'image-small';
-  $: active_container_class = innerWidth > 600 ? 'skill-container-large' : 'skill-container-small';
+  $: active_image_class = innerWidth > 1080 ? "image-large" : "image-small";
+  $: active_container_class =
+    innerWidth > 1080 ? "skill-container-large" : "skill-container-small";
 </script>
 
 <svelte:window bind:innerWidth />
@@ -30,11 +31,11 @@
     overflow: hidden;
   }
   .skill-container-small {
-    height: 175px;
-    width: 175px;
+    height: 125px;
+    width: 125px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 14px;
     overflow: hidden;
   }
@@ -45,7 +46,7 @@
   }
 
   .image-small {
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
   }
 </style>

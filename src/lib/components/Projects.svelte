@@ -27,37 +27,62 @@
 
 <svelte:window bind:innerWidth />
 
-<div
-  class={innerWidth > 1100 ? "projects-container" : "projects-container-small"}
->
-  {#each Object.entries(projects) as [project, props]}
-    <div class="project">
-      <p>{project}</p>
-      <a target="_blank" href={props.link}
-        ><img class="image" src={props.image} /></a
-      >
-    </div>
-  {/each}
+<div class="skills-holder">
+  <h1>Projects</h1>
+  <div
+    class={innerWidth < 1080 ? "skills-container-small" : "skills-container"}
+  >
+    {#each Object.entries(projects) as [project, props]}
+      <div class="skill">
+        <p class={"project-title"}>{project}</p>
+        <a target="_blank" href={props.link}>
+          <img class="image" src={props.image} />
+        </a>
+      </div>
+    {/each}
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
 </div>
 
 <style>
-  .projects-container {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: auto auto;
-    overflow: scroll;
-  }
-
-  .projects-container-small {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: auto;
-    overflow: scroll;
-  }
-
   .image {
     height: 300px;
     width: 300px;
     border-radius: 14px;
+  }
+
+  .skills-holder {
+    width: 100vw;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    border-bottom: 3px solid rgba(118, 171, 174, 0.5);
+  }
+  .skills-container {
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .skills-container-small {
+    /* display: grid;
+    overflow: scroll;
+    gap: 5px;
+    grid-template-columns: auto auto; */
+  }
+
+  .project-title {
+    color: #76abae;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #76abae;
   }
 </style>

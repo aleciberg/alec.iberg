@@ -1,7 +1,5 @@
 <script>
-  import { base } from "$app/paths";
   import Title from "../lib/components/Title.svelte";
-  import Links from "../lib/components/Links.svelte";
   import Bio from "../lib/components/Bio.svelte";
   import Skills from "../lib/components/Skills.svelte";
   import Projects from "../lib/components/Projects.svelte";
@@ -11,7 +9,6 @@
 <div class="base-page-container">
   <div class="top-level">
     <Title />
-    <Links />
   </div>
   <div class="bio-container">
     <Bio />
@@ -25,9 +22,8 @@
 
 <style>
   .base-page-container {
-    border: 2px solid green;
-    /* width: 100vw;
-  overflow: hidden; */
+    width: 95vw;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -43,6 +39,6 @@
   }
 
   .skills-container {
-    
+    border: 10px soild blue;
   }
 </style>

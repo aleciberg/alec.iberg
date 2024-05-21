@@ -8,12 +8,11 @@
     { name: "Svelte", image: "/images/svelte.png" },
     { name: "GoLang", image: "/images/golang.png" },
     { name: "JavaScript", image: "/images/js.png" },
+    { name: "Node", image: "/images/node.png" },
     { name: "React", image: "/images/react.png" },
-    { name: "Redux", image: "/images/Redux.png" },
     { name: "Git", image: "/images/gitbash.png" },
     { name: "CI/CD", image: "/images/gitlab-ci.png" },
     { name: "Jest", image: "/images/jest.png" },
-    { name: "Node", image: "/images/node.png" },
   ];
 </script>
 
@@ -21,7 +20,9 @@
 
 <div class="skills-holder">
   <h1>Skills</h1>
-  <div class={innerWidth < 600 ? "skills-container-small" : "skills-container"}>
+  <div
+    class={innerWidth < 1080 ? "skills-container-small" : "skills-container"}
+  >
     {#each skills as skill}
       <div class="skill">
         <Skill {skill} />
@@ -30,30 +31,36 @@
   </div>
   <br />
   <br />
+  <br />
+  <br />
 </div>
 
 <style>
   .skills-holder {
     width: 100vw;
+    height: 10%;
     margin: auto;
     text-align: center;
     border-bottom: 3px solid rgba(118, 171, 174, 0.5);
   }
   .skills-container {
-    display: grid;
-    overflow: scroll;
+    display: flex;
+    /* overflow: scroll; */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80vw;
-    /* gap: 5px; */
-    grid-template-columns: auto auto auto auto;
+    gap: 10px;
   }
 
   .skills-container-small {
+    /* display: flex;
+    flex-wrap: row; */
     display: grid;
-    overflow: scroll;
-    gap: 5px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+    height: 100%;
+    /* overflow: scroll; */
+    /* gap: 5px; */
   }
 
   h1 {
