@@ -2,6 +2,11 @@
   let innerWidth;
 
   const projects = {
+    'Noncompete Length': {
+      name: 'noncompete',
+      link: 'https://github.com/aleciberg/noncompete',
+      image: '/images/noncompete.png',
+    },
     "CLI Crypto": {
       name: "clicrypto",
       link: "https://github.com/aleciberg/CLI_crypto",

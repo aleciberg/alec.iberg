@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as escape, e as each, d as null_to_empty, f as add_attribute } from "../../../chunks/index.js";
+import { c as create_ssr_component, e as escape, f as each, d as null_to_empty, b as add_attribute } from "../../../chunks/index.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".projects-container.svelte-1jxinm1{display:grid;gap:12px;grid-template-columns:auto auto;overflow:scroll}.projects-container-small.svelte-1jxinm1{display:grid;gap:12px;grid-template-columns:auto;overflow:scroll}.image.svelte-1jxinm1{height:300px;width:300px;border-radius:14px}",

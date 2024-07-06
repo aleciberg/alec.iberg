@@ -2,11 +2,16 @@
   let innerWidth;
 
   const projects = {
-    'CLI Crypto': {
-      name: 'clicrypto',
-      link: 'https://github.com/aleciberg/CLI_crypto',
-      image: '/images/clicrypto.gif',
+    'Noncompete Length': {
+      name: 'noncompete',
+      link: 'https://github.com/aleciberg/noncompete',
+      image: '/images/noncompete.png',
     },
+    // 'CLI Crypto': {
+    //   name: 'clicrypto',
+    //   link: 'https://github.com/aleciberg/CLI_crypto',
+    //   image: '/images/clicrypto.gif',
+    // },
     'CRWN CLOTHING': {
       name: 'Crwn Clothing',
       link: 'https://github.com/aleciberg',

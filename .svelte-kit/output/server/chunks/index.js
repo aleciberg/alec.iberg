@@ -134,11 +134,11 @@ function add_attribute(name, value, boolean) {
 }
 export {
   setContext as a,
-  escape as b,
+  add_attribute as b,
   create_ssr_component as c,
   null_to_empty as d,
-  each as e,
-  add_attribute as f,
+  escape as e,
+  each as f,
   is_void as g,
   createEventDispatcher as h,
   is_promise as i,
