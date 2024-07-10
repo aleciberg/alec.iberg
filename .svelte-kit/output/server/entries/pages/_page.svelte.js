@@ -78,6 +78,14 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       name: "JavaScript",
       image: "/images/js.png"
     },
+    {
+      name: "Docker",
+      image: "/images/docker.png"
+    },
+    {
+      name: "Postgres",
+      image: "/images/postgres.png"
+    },
     { name: "Node", image: "/images/node.png" },
     {
       name: "React",
@@ -117,6 +125,11 @@ const css$2 = {
 };
 const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const projects = {
+    "Noncompete Length": {
+      name: "noncompete",
+      link: "https://github.com/aleciberg/noncompete",
+      image: "/images/noncompete.png"
+    },
     "CLI Crypto": {
       name: "clicrypto",
       link: "https://github.com/aleciberg/CLI_crypto",
