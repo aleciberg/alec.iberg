@@ -16,40 +16,29 @@ const Title = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Bio_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: ".bio-text.svelte-1dd2el8{color:#eeeeee;font-size:24px;margin:20px;border-bottom:3px solid rgba(118, 171, 174, 0.5);border-top:3px solid rgba(118, 171, 174, 0.5)}.attention.svelte-1dd2el8{color:#76abae}.link.svelte-1dd2el8{text-decoration:none;color:#76abae}",
+  code: ".bio-text.svelte-ngbp5r{color:#eeeeee;font-size:24px;margin:20px;border-bottom:3px solid rgba(118, 171, 174, 0.5);border-top:3px solid rgba(118, 171, 174, 0.5)}.attention.svelte-ngbp5r{color:#76abae}.link.svelte-ngbp5r{text-decoration:none;color:#76abae}@keyframes svelte-ngbp5r-blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}.blinking-text.svelte-ngbp5r{color:#76abae;animation:svelte-ngbp5r-blink 1.5s infinite;border:2px solid #f1fa8c}@keyframes svelte-ngbp5r-pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}@keyframes svelte-ngbp5r-border-flash{0%{border-color:#76abae}50%{border-color:white}100%{border-color:#76abae}}@keyframes svelte-ngbp5r-underline-color-change{0%{text-decoration-color:#76abae}50%{text-decoration-color:white}100%{text-decoration-color:#76abae}}",
   map: null
 };
 const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
-  return `<div class="${"bio-text svelte-1dd2el8"}"><br>
-  Hello, my name is <span class="${escape(null_to_empty("attention"), true) + " svelte-1dd2el8"}">Alec Iberg</span> and I am a Full
-  Stack Developer.
+  return `<div class="${"bio-text svelte-ngbp5r"}"><br>
+  Hello, my name is <span class="${escape(null_to_empty("attention"), true) + " svelte-ngbp5r"}">Alec Iberg</span> and I am a Full
+  Stack Developer, and <span class="${"blinking-text svelte-ngbp5r"}">I am actively looking for new opportunities.</span>
   <br>
   <br>
-  I currently work at
-  <a class="${escape(null_to_empty("link"), true) + " svelte-1dd2el8"}"${add_attribute("target", "_blank", 0)}${add_attribute("href", "https://array.com", 0)}>Array</a>, as a
-  Software Engineer II, building Digital Financial Management tools. I currently
-  work with${escape(" ")}
-  <span class="${"target"}">JavaScript, TypeScript, Svelte, NodeJS, and GoLang${escape(" ")}</span>
-  and very much enjoy this stack. I always find great satisfaction in seeing my work
-  produce
-  <span class="${"target"}">meaningful </span>
-  and
-  <span class="${"target"}">measurable</span> results and I love being able to
-  provide value to the Financial Wellness space and improve access to credit for
-  <span class="${"target"}">everyone.</span>
+  I most recently worked at <a class="${"link svelte-ngbp5r"}" href="${"https://array.com"}">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
   <br>
   <br>
   ${escape(" ")}
   As for my personal life, I really enjoy the${escape(" ")}
-  <span class="${"attention svelte-1dd2el8"}">outdoors</span>- you can usually find me camping,
+  <span class="${"attention svelte-ngbp5r"}">outdoors</span>- you can usually find me camping,
   hiking, or backpacking on a weekend. I am fortunate enough to
   <span class="${"target"}">live in Portland</span> and be surrounded by some of our
   nation&#39;s best outdoor beauty.${escape(" ")}
-  <span class="${escape(null_to_empty("attention"), true) + " svelte-1dd2el8"}">Mount Hood</span> is probably my favorite.
+  <span class="${escape(null_to_empty("attention"), true) + " svelte-ngbp5r"}">Mount Hood</span> is probably my favorite.
   Additionally, I am a huge College Football fan (GO BUCKEYES!), a big hockey
   fan, and I very much enjoy spending time with my dog,
-  <span class="${escape(null_to_empty("attention"), true) + " svelte-1dd2el8"}">Juniper.</span> She is a 4 year old Border Collie
+  <span class="${escape(null_to_empty("attention"), true) + " svelte-ngbp5r"}">Juniper.</span> She is a 4 year old Border Collie
   with unlimited energy.
   <br>
   <br>
@@ -86,6 +75,7 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       name: "Postgres",
       image: "/images/postgres.png"
     },
+    { name: "GCP", image: "/images/gcp.png" },
     { name: "Node", image: "/images/node.png" },
     {
       name: "React",
