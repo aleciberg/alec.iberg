@@ -4,23 +4,10 @@
 <div class="bio-text">
   <br />
   Hello, my name is <span class={"attention"}>Alec Iberg</span> and I am a Full
-  Stack Developer.
+  Stack Developer, and <span class="blinking-text">I am actively looking for new opportunities.</span>
   <br />
   <br />
-  I currently work at
-  <a class={"link"} target={"_blank"} href={"https://array.com"}>Array</a>, as a
-  Software Engineer II, building Digital Financial Management tools. I currently
-  work with{" "}
-  <span class="target">
-    JavaScript, TypeScript, Svelte, NodeJS, and GoLang{" "}
-  </span>
-  and very much enjoy this stack. I always find great satisfaction in seeing my work
-  produce
-  <span class="target">meaningful </span>
-  and
-  <span class="target"> measurable</span> results and I love being able to
-  provide value to the Financial Wellness space and improve access to credit for
-  <span class="target">everyone.</span>
+  I most recently worked at <a class="link" href="https://array.com">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
   <br />
   <br />
   {" "}
@@ -53,4 +40,54 @@
     text-decoration: none;
     color: #76abae;
   }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-text {
+    color: #76abae;
+    animation: blink 1.5s infinite;
+    border: 2px solid #f1fa8c;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulsing-text {
+    color: #76abae;
+    animation: pulse 2s infinite;
+}
+
+@keyframes border-flash {
+    0% { border-color: #76abae; }
+    50% { border-color: white; }
+    100% { border-color: #76abae; }
+}
+
+.highlighted-text {
+    background-color: #222831;
+    color: white;
+    padding: 5px;
+    border: 2px solid #76abae;
+    animation: border-flash 2s infinite;
+}
+
+@keyframes underline-color-change {
+    0% { text-decoration-color: #76abae; }
+    50% { text-decoration-color: white; }
+    100% { text-decoration-color: #76abae; }
+}
+
+.underline-color-change {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #76abae;
+    animation: underline-color-change 2s infinite;
+}
 </style>

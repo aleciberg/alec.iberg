@@ -10,6 +10,7 @@
     { name: "JavaScript", image: "/images/js.png" },
     { name: "Docker", image: "/images/docker.png" },
     { name: "Postgres", image: "/images/postgres.png" },
+    { name: "GCP", image: "/images/gcp.png" },
     { name: "Node", image: "/images/node.png" },
     { name: "React", image: "/images/react.png" },
     { name: "Git", image: "/images/gitbash.png" },
