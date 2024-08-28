@@ -22,7 +22,7 @@
 
 <style>
   .base-page-container {
-    width: 95vw;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;

@@ -4,7 +4,10 @@
 <div class="bio-text">
   <br />
   Hello, my name is <span class={"attention"}>Alec Iberg</span> and I am a Full
-  Stack Developer, and <span class="blinking-text">I am actively looking for new opportunities.</span>
+  Stack Developer.
+  <br />
+  <br />
+  <span class="blinking-text">I am actively looking for new opportunities.</span>
   <br />
   <br />
   I most recently worked at <a class="link" href="https://array.com">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  

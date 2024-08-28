@@ -24,7 +24,7 @@
   }
   .image {
     height: 200px;
-    width: 200px;
+    width: 150px;
     border-radius: 100px;
   }
 </style>

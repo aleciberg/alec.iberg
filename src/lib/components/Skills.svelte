@@ -48,7 +48,7 @@
   }
   .skills-container {
     display: flex;
-    /* overflow: scroll; */
+    overflow: scroll;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2px;
     height: 100%;
-    /* overflow: scroll; */
+    overflow: scroll;
     /* gap: 5px; */
   }
 

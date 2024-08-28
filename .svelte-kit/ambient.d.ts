@@ -27,7 +27,6 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
-	export const MANPATH: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
@@ -79,9 +78,9 @@ declare module '$env/static/private' {
 	export const LESS: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
+	export const GOPATH: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
-	export const POSTGRESQL_URL: string;
 	export const PROMPT_EOL_MARK: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
@@ -120,7 +119,6 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
-		MANPATH: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
@@ -172,9 +170,9 @@ declare module '$env/dynamic/private' {
 		LESS: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
+		GOPATH: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
-		POSTGRESQL_URL: string;
 		PROMPT_EOL_MARK: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
