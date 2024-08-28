@@ -4,14 +4,14 @@ import { S as Skill } from "../../chunks/Skill.js";
 import { T as Typewriter } from "../../chunks/Typewriter.js";
 const Title_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: ".title-container.svelte-1hvvb7z{width:60vw;display:flex;align-items:center;margin:10px}.title-bar.svelte-1hvvb7z{color:#76abae;font-size:48px;margin-left:30px}.image.svelte-1hvvb7z{height:200px;width:200px;border-radius:100px}",
+  code: ".title-container.svelte-14rhcj{width:60vw;display:flex;align-items:center;margin:10px}.title-bar.svelte-14rhcj{color:#76abae;font-size:48px;margin-left:30px}.image.svelte-14rhcj{height:200px;width:150px;border-radius:100px}",
   map: null
 };
 const Title = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   console.log("in play");
   $$result.css.add(css$5);
-  return `<div class="${"title-container svelte-1hvvb7z"}"><div class="${"image-container"}"><img class="${"image svelte-1hvvb7z"}"${add_attribute("src", `${base}/images/alec.png`, 0)} alt="${"Alec"}"></div>
-  <h1 class="${"title-bar svelte-1hvvb7z"}">Alec Iberg</h1>
+  return `<div class="${"title-container svelte-14rhcj"}"><div class="${"image-container"}"><img class="${"image svelte-14rhcj"}"${add_attribute("src", `${base}/images/alec.png`, 0)} alt="${"Alec"}"></div>
+  <h1 class="${"title-bar svelte-14rhcj"}">Alec Iberg</h1>
 </div>`;
 });
 const Bio_svelte_svelte_type_style_lang = "";
@@ -23,7 +23,10 @@ const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
   return `<div class="${"bio-text svelte-ngbp5r"}"><br>
   Hello, my name is <span class="${escape(null_to_empty("attention"), true) + " svelte-ngbp5r"}">Alec Iberg</span> and I am a Full
-  Stack Developer, and <span class="${"blinking-text svelte-ngbp5r"}">I am actively looking for new opportunities.</span>
+  Stack Developer.
+  <br>
+  <br>
+  <span class="${"blinking-text svelte-ngbp5r"}">I am actively looking for new opportunities.</span>
   <br>
   <br>
   I most recently worked at <a class="${"link svelte-ngbp5r"}" href="${"https://array.com"}">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
@@ -46,7 +49,7 @@ const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Skills_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".skills-holder.svelte-dv62z5{width:100vw;height:10%;margin:auto;text-align:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}.skills-container.svelte-dv62z5{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:10px}.skills-container-small.svelte-dv62z5{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2px;height:100%}h1.svelte-dv62z5{font-size:48px;color:#76abae}",
+  code: ".skills-holder.svelte-1s89c5l{width:100vw;height:10%;margin:auto;text-align:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}.skills-container.svelte-1s89c5l{display:flex;overflow:scroll;flex-direction:row;align-items:center;justify-content:center;gap:10px}.skills-container-small.svelte-1s89c5l{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:2px;height:100%;overflow:scroll}h1.svelte-1s89c5l{font-size:48px;color:#76abae}",
   map: null
 };
 const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -94,11 +97,11 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
   return `
 
-<div class="${"skills-holder svelte-dv62z5"}"><h1 class="${"svelte-dv62z5"}">Skills</h1>
+<div class="${"skills-holder svelte-1s89c5l"}"><h1 class="${"svelte-1s89c5l"}">Skills</h1>
   <div class="${escape(
     null_to_empty("skills-container"),
     true
-  ) + " svelte-dv62z5"}">${each(skills, (skill) => {
+  ) + " svelte-1s89c5l"}">${each(skills, (skill) => {
     return `<div class="${"skill"}">${validate_component(Skill, "Skill").$$render($$result, { skill }, {}, {})}
       </div>`;
   })}</div>
@@ -178,14 +181,14 @@ const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".base-page-container.svelte-1c8l3ra{width:95vw;overflow:hidden;display:flex;flex-direction:column}.top-level.svelte-1c8l3ra{display:flex;flex-direction:row}.bio-container.svelte-1c8l3ra{width:100%;margin-top:60px}.skills-container.svelte-1c8l3ra{border:10px soild blue}",
+  code: ".base-page-container.svelte-j9v30z{width:100vw;overflow:hidden;display:flex;flex-direction:column}.top-level.svelte-j9v30z{display:flex;flex-direction:row}.bio-container.svelte-j9v30z{width:100%;margin-top:60px}.skills-container.svelte-j9v30z{border:10px soild blue}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"base-page-container svelte-1c8l3ra"}"><div class="${"top-level svelte-1c8l3ra"}">${validate_component(Title, "Title").$$render($$result, {}, {}, {})}</div>
-  <div class="${"bio-container svelte-1c8l3ra"}">${validate_component(Bio, "Bio").$$render($$result, {}, {}, {})}</div>
-  <div class="${"skills-container svelte-1c8l3ra"}">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div>
+  return `<div class="${"base-page-container svelte-j9v30z"}"><div class="${"top-level svelte-j9v30z"}">${validate_component(Title, "Title").$$render($$result, {}, {}, {})}</div>
+  <div class="${"bio-container svelte-j9v30z"}">${validate_component(Bio, "Bio").$$render($$result, {}, {}, {})}</div>
+  <div class="${"skills-container svelte-j9v30z"}">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div>
   ${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})}
   ${validate_component(Contact, "Contact").$$render($$result, {}, {}, {})}
 </div>`;
