@@ -7,7 +7,7 @@
   Stack Developer.
   <br />
   <br />
-  <span class="blinking-text">I am actively looking for new opportunities.</span>
+  <div class="blinking-text">I am actively looking for new opportunities.</div>
   <br />
   <br />
   I most recently worked at <a class="link" href="https://array.com">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
@@ -54,6 +54,7 @@
     color: #76abae;
     animation: blink 1.5s infinite;
     border: 2px solid #f1fa8c;
+    text-align: center;
 }
 
 @keyframes pulse {
