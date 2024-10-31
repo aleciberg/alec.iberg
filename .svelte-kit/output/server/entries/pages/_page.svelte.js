@@ -28,7 +28,6 @@ const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   <br>
   <div class="${"blinking-text svelte-1mscbmu"}">I am actively looking for new opportunities.</div>
   <br>
-  <br>
   I most recently worked at <a class="${"link svelte-1mscbmu"}" href="${"https://array.com"}">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
   <br>
   <br>
@@ -113,10 +112,16 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Projects_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".image.svelte-1ioj0wm{height:300px;width:300px;border-radius:14px}.skills-holder.svelte-1ioj0wm{width:100vw;height:10%;margin:auto;text-align:center;align-items:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}.skills-container.svelte-1ioj0wm{display:flex;overflow:scroll;align-items:center;justify-content:center;gap:15px}.project-title.svelte-1ioj0wm{color:#76abae}h1.svelte-1ioj0wm{font-size:48px;color:#76abae}",
+  code: ".showcase-container.svelte-i54ktk{width:60%;margin:20px auto;padding:20px;background-color:rgba(118, 171, 174, 0.1);border:2px solid #FF1493;border-radius:12px;text-align:center}.showcase-title.svelte-i54ktk{font-size:36px;color:#76abae}.showcase-image.svelte-i54ktk{width:100%;max-width:600px;border-radius:12px;margin-top:10px}.showcase-description.svelte-i54ktk{font-size:18px;color:#76abae;margin-top:15px}.skills-holder.svelte-i54ktk{width:100vw;text-align:center;align-items:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}h1.svelte-i54ktk{font-size:48px;color:#76abae;margin-bottom:20px}.projects-container.svelte-i54ktk,.projects-container-small.svelte-i54ktk{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px}.project-card.svelte-i54ktk{background-color:rgba(118, 171, 174, 0.05);padding:15px;border:2px solid #FF1493;border-radius:10px;width:220px;text-align:center;box-shadow:0 4px 8px rgba(0, 0, 0, 0.1)}.project-title.svelte-i54ktk{color:#76abae;margin-bottom:10px;font-size:16px;font-weight:bold}.project-image.svelte-i54ktk{width:100%;max-width:200px;height:auto;border-radius:10px;margin-top:10px}.projects-container-small.svelte-i54ktk{display:grid;gap:15px;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))}",
   map: null
 };
 const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const showcaseProject = {
+    name: "Cosmic Cargo Network",
+    description: "Cosmic Cargo Network is a mock company I am building to practice GoLang and more front end development. Cosmic Cargo Network is a galactic shipping organization that services 3 superclusters, 6 galaxies, and 50 planets. We provide various APIs from distance calculators to pricing quotes to availability statuses.",
+    link: "https://github.com/aleciberg/cosmiccargonetwork",
+    image: "/images/cosmic_cargo_network.png"
+  };
   const projects = {
     "Noncompete Length": {
       name: "noncompete",
@@ -137,29 +142,25 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       name: "Movie Fight",
       link: "https://github.com/aleciberg/movieFight",
       image: "/images/moviefight.png"
-    },
-    "Weather App": {
-      name: "Weather App",
-      link: "https://github.com/aleciberg/AirQualityViewer",
-      image: "/images/weatherApp.gif"
     }
   };
   $$result.css.add(css$2);
   return `
 
-<div class="${"skills-holder svelte-1ioj0wm"}"><h1 class="${"svelte-1ioj0wm"}">Projects</h1>
+<div class="${"skills-holder svelte-i54ktk"}"><h1 class="${"svelte-i54ktk"}">Projects</h1>
+
+  <div class="${"showcase-container svelte-i54ktk"}"><h2 class="${"showcase-title svelte-i54ktk"}">${escape(showcaseProject.name)}</h2>
+    <a target="${"_blank"}"${add_attribute("href", showcaseProject.link, 0)}><img class="${"showcase-image svelte-i54ktk"}"${add_attribute("src", showcaseProject.image, 0)}></a>
+    <p class="${"showcase-description svelte-i54ktk"}">${escape(showcaseProject.description)}</p></div>
+
   <div class="${escape(
-    null_to_empty("skills-container"),
+    null_to_empty("projects-container"),
     true
-  ) + " svelte-1ioj0wm"}">${each(Object.entries(projects), ([project, props]) => {
-    return `<div class="${"skill"}"><p class="${escape(null_to_empty("project-title"), true) + " svelte-1ioj0wm"}">${escape(project)}</p>
-        <a target="${"_blank"}"${add_attribute("href", props.link, 0)}><img class="${"image svelte-1ioj0wm"}"${add_attribute("src", props.image, 0)}></a>
+  ) + " svelte-i54ktk"}">${each(Object.entries(projects), ([project, props]) => {
+    return `<div class="${"project-card svelte-i54ktk"}"><p class="${"project-title svelte-i54ktk"}">${escape(project)}</p>
+        <a target="${"_blank"}"${add_attribute("href", props.link, 0)}><img class="${"project-image svelte-i54ktk"}"${add_attribute("src", props.image, 0)}></a>
       </div>`;
   })}</div>
-  <br>
-  <br>
-  <br>
-  <br>
 </div>`;
 });
 const Contact_svelte_svelte_type_style_lang = "";

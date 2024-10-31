@@ -142,4 +142,22 @@
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+
+  @media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column; 
+    align-items: center;    
+  }
+
+  .project-card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .project-image {
+    height: auto; 
+    max-width: 100%; 
+  }
+}
+
 </style>
