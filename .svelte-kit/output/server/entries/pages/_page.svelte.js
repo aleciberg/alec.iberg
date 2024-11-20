@@ -112,7 +112,7 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Projects_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".showcase-container.svelte-i54ktk{width:60%;margin:20px auto;padding:20px;background-color:rgba(118, 171, 174, 0.1);border:2px solid #FF1493;border-radius:12px;text-align:center}.showcase-title.svelte-i54ktk{font-size:36px;color:#76abae}.showcase-image.svelte-i54ktk{width:100%;max-width:600px;border-radius:12px;margin-top:10px}.showcase-description.svelte-i54ktk{font-size:18px;color:#76abae;margin-top:15px}.skills-holder.svelte-i54ktk{width:100vw;text-align:center;align-items:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}h1.svelte-i54ktk{font-size:48px;color:#76abae;margin-bottom:20px}.projects-container.svelte-i54ktk,.projects-container-small.svelte-i54ktk{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px}.project-card.svelte-i54ktk{background-color:rgba(118, 171, 174, 0.05);padding:15px;border:2px solid #FF1493;border-radius:10px;width:220px;text-align:center;box-shadow:0 4px 8px rgba(0, 0, 0, 0.1)}.project-title.svelte-i54ktk{color:#76abae;margin-bottom:10px;font-size:16px;font-weight:bold}.project-image.svelte-i54ktk{width:100%;max-width:200px;height:auto;border-radius:10px;margin-top:10px}.projects-container-small.svelte-i54ktk{display:grid;gap:15px;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))}",
+  code: ".showcase-container.svelte-jmjq45{width:60%;margin:20px auto;padding:20px;background-color:rgba(118, 171, 174, 0.1);border:2px solid #FF1493;border-radius:12px;text-align:center}.showcase-title.svelte-jmjq45{font-size:36px;color:#76abae}.showcase-image.svelte-jmjq45{width:100%;max-width:600px;border-radius:12px;margin-top:10px}.showcase-description.svelte-jmjq45{font-size:18px;color:#76abae;margin-top:15px}.skills-holder.svelte-jmjq45{width:100vw;text-align:center;align-items:center;border-bottom:3px solid rgba(118, 171, 174, 0.5)}h1.svelte-jmjq45{font-size:48px;color:#76abae;margin-bottom:20px}.projects-container.svelte-jmjq45,.projects-container-small.svelte-jmjq45{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px}.project-card.svelte-jmjq45{background-color:rgba(118, 171, 174, 0.05);padding:15px;border:2px solid #FF1493;border-radius:10px;width:220px;text-align:center;box-shadow:0 4px 8px rgba(0, 0, 0, 0.1)}.project-title.svelte-jmjq45{color:#76abae;margin-bottom:10px;font-size:16px;font-weight:bold}.project-image.svelte-jmjq45{width:100%;max-width:200px;height:auto;border-radius:10px;margin-top:10px}.projects-container-small.svelte-jmjq45{display:grid;gap:15px;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))}@media(max-width: 768px){.projects-container.svelte-jmjq45{flex-direction:column;align-items:center}.project-card.svelte-jmjq45{width:90%;margin-bottom:15px}.project-image.svelte-jmjq45{height:auto;max-width:100%}}",
   map: null
 };
 const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -147,18 +147,18 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   $$result.css.add(css$2);
   return `
 
-<div class="${"skills-holder svelte-i54ktk"}"><h1 class="${"svelte-i54ktk"}">Projects</h1>
+<div class="${"skills-holder svelte-jmjq45"}"><h1 class="${"svelte-jmjq45"}">Projects</h1>
 
-  <div class="${"showcase-container svelte-i54ktk"}"><h2 class="${"showcase-title svelte-i54ktk"}">${escape(showcaseProject.name)}</h2>
-    <a target="${"_blank"}"${add_attribute("href", showcaseProject.link, 0)}><img class="${"showcase-image svelte-i54ktk"}"${add_attribute("src", showcaseProject.image, 0)}></a>
-    <p class="${"showcase-description svelte-i54ktk"}">${escape(showcaseProject.description)}</p></div>
+  <div class="${"showcase-container svelte-jmjq45"}"><h2 class="${"showcase-title svelte-jmjq45"}">${escape(showcaseProject.name)}</h2>
+    <a target="${"_blank"}"${add_attribute("href", showcaseProject.link, 0)}><img class="${"showcase-image svelte-jmjq45"}"${add_attribute("src", showcaseProject.image, 0)}></a>
+    <p class="${"showcase-description svelte-jmjq45"}">${escape(showcaseProject.description)}</p></div>
 
   <div class="${escape(
     null_to_empty("projects-container"),
     true
-  ) + " svelte-i54ktk"}">${each(Object.entries(projects), ([project, props]) => {
-    return `<div class="${"project-card svelte-i54ktk"}"><p class="${"project-title svelte-i54ktk"}">${escape(project)}</p>
-        <a target="${"_blank"}"${add_attribute("href", props.link, 0)}><img class="${"project-image svelte-i54ktk"}"${add_attribute("src", props.image, 0)}></a>
+  ) + " svelte-jmjq45"}">${each(Object.entries(projects), ([project, props]) => {
+    return `<div class="${"project-card svelte-jmjq45"}"><p class="${"project-title svelte-jmjq45"}">${escape(project)}</p>
+        <a target="${"_blank"}"${add_attribute("href", props.link, 0)}><img class="${"project-image svelte-jmjq45"}"${add_attribute("src", props.image, 0)}></a>
       </div>`;
   })}</div>
 </div>`;

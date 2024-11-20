@@ -6,9 +6,6 @@
   Hello, my name is <span class={"attention"}>Alec Iberg</span> and I am a Full
   Stack Developer.
   <br />
-  <br />
-  <div class="blinking-text">I am actively looking for new opportunities.</div>
-  <br />
   I most recently worked at <a class="link" href="https://array.com">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
   <br />
   <br />
