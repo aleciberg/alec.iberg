@@ -16,7 +16,7 @@ const Title = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Bio_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: ".bio-text.svelte-1mscbmu{color:#eeeeee;font-size:24px;margin:20px;border-bottom:3px solid rgba(118, 171, 174, 0.5);border-top:3px solid rgba(118, 171, 174, 0.5)}.attention.svelte-1mscbmu{color:#76abae}.link.svelte-1mscbmu{text-decoration:none;color:#76abae}@keyframes svelte-1mscbmu-blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}.blinking-text.svelte-1mscbmu{color:#76abae;animation:svelte-1mscbmu-blink 1.5s infinite;border:2px solid #f1fa8c;text-align:center}@keyframes svelte-1mscbmu-pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}@keyframes svelte-1mscbmu-border-flash{0%{border-color:#76abae}50%{border-color:white}100%{border-color:#76abae}}@keyframes svelte-1mscbmu-underline-color-change{0%{text-decoration-color:#76abae}50%{text-decoration-color:white}100%{text-decoration-color:#76abae}}",
+  code: ".bio-text.svelte-1mscbmu{color:#eeeeee;font-size:24px;margin:20px;border-bottom:3px solid rgba(118, 171, 174, 0.5);border-top:3px solid rgba(118, 171, 174, 0.5)}.attention.svelte-1mscbmu{color:#76abae}.link.svelte-1mscbmu{text-decoration:none;color:#76abae}@keyframes svelte-1mscbmu-blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@keyframes svelte-1mscbmu-pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}@keyframes svelte-1mscbmu-border-flash{0%{border-color:#76abae}50%{border-color:white}100%{border-color:#76abae}}@keyframes svelte-1mscbmu-underline-color-change{0%{text-decoration-color:#76abae}50%{text-decoration-color:white}100%{text-decoration-color:#76abae}}",
   map: null
 };
 const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -24,9 +24,6 @@ const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="${"bio-text svelte-1mscbmu"}"><br>
   Hello, my name is <span class="${escape(null_to_empty("attention"), true) + " svelte-1mscbmu"}">Alec Iberg</span> and I am a Full
   Stack Developer.
-  <br>
-  <br>
-  <div class="${"blinking-text svelte-1mscbmu"}">I am actively looking for new opportunities.</div>
   <br>
   I most recently worked at <a class="${"link svelte-1mscbmu"}" href="${"https://array.com"}">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
   <br>
