@@ -5,17 +5,17 @@
 
   const skills = [
     { name: "TypeScript", image: "/images/typescript.png" },
-    { name: "Svelte", image: "/images/svelte.png" },
-    { name: "GoLang", image: "/images/golang.png" },
-    { name: "JavaScript", image: "/images/js.png" },
-    { name: "Docker", image: "/images/docker.png" },
-    { name: "Postgres", image: "/images/postgres.png" },
-    { name: "GCP", image: "/images/gcp.png" },
-    { name: "Node", image: "/images/node.png" },
     { name: "React", image: "/images/react.png" },
+    { name: "Node", image: "/images/node.png" },
+    { name: "GoLang", image: "/images/golang.png" },
+    { name: "AWS", image: "/images/aws.png" },
+    { name: "Postgres", image: "/images/postgres.png" },
+    { name: "JavaScript", image: "/images/js.png" },
+    { name: "Svelte", image: "/images/svelte.png" },
+    { name: "Docker", image: "/images/docker.png" },
+    { name: "GCP", image: "/images/gcp.png" },
     { name: "Git", image: "/images/gitbash.png" },
     { name: "CI/CD", image: "/images/gitlab-ci.png" },
-    { name: "Jest", image: "/images/jest.png" },
   ];
 </script>
 

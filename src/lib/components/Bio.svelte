@@ -3,10 +3,10 @@
 
 <div class="bio-text">
   <br />
-  Hello, my name is <span class={"attention"}>Alec Iberg</span> and I am a Full
-  Stack Developer.
+  Hello, my name is <span class={"attention"}>Alec Iberg.</span>
   <br />
-  I most recently worked at <a class="link" href="https://array.com">Array</a>, a FinTech company, as a Software Engineer II, on such products as Debt Manager, Offers Engine, and Subscription Manager.  
+  <br />
+  I currently work as a Full Stack Developer at <a hfref="https://cynchealth.org">CyncHealth</a>, supporting the backend architecure to ingest HL7 messages and the front end portal to support healthcare facilities in Nebraska and Iowa.  
   <br />
   <br />
   {" "}

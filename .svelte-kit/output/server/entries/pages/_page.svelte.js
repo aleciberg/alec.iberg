@@ -4,14 +4,14 @@ import { S as Skill } from "../../chunks/Skill.js";
 import { T as Typewriter } from "../../chunks/Typewriter.js";
 const Title_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: ".title-container.svelte-14rhcj{width:60vw;display:flex;align-items:center;margin:10px}.title-bar.svelte-14rhcj{color:#76abae;font-size:48px;margin-left:30px}.image.svelte-14rhcj{height:200px;width:150px;border-radius:100px}",
+  code: ".title-container.svelte-106loeb{width:60vw;display:flex;align-items:center;margin:10px}.title-bar.svelte-106loeb{color:#76abae;font-size:48px;margin-left:30px}.image.svelte-106loeb{height:200px;width:150px;border-radius:100px;border:2px solid #FF1493}",
   map: null
 };
 const Title = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   console.log("in play");
   $$result.css.add(css$5);
-  return `<div class="${"title-container svelte-14rhcj"}"><div class="${"image-container"}"><img class="${"image svelte-14rhcj"}"${add_attribute("src", `${base}/images/alec.png`, 0)} alt="${"Alec"}"></div>
-  <h1 class="${"title-bar svelte-14rhcj"}">Alec Iberg</h1>
+  return `<div class="${"title-container svelte-106loeb"}"><div class="${"image-container"}"><img class="${"image svelte-106loeb"}"${add_attribute("src", `${base}/images/alec.png`, 0)} alt="${"Alec"}"></div>
+  <h1 class="${"title-bar svelte-106loeb"}">Alec Iberg</h1>
 </div>`;
 });
 const Bio_svelte_svelte_type_style_lang = "";
