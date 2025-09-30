@@ -6,7 +6,7 @@
   Hello, my name is <span class={"attention"}>Alec Iberg.</span>
   <br />
   <br />
-  I currently work as a Full Stack Developer at <a hfref="https://cynchealth.org">CyncHealth</a>, supporting the backend architecure to ingest HL7 messages and the front end portal to support healthcare facilities in Nebraska and Iowa.  
+  I am a Software Engineer specializing in Full Stack web development, with 6+ years developing beautiful front ends and robust back ends.
   <br />
   <br />
   {" "}
@@ -18,7 +18,7 @@
   <span class={"attention"}>Mount Hood</span> is probably my favorite.
   Additionally, I am a huge College Football fan (GO BUCKEYES!), a big hockey
   fan, and I very much enjoy spending time with my dog,
-  <span class={"attention"}> Juniper.</span> She is a 4 year old Border Collie
+  <span class={"attention"}> Juniper.</span> She is a 5 year old Border Collie
   with unlimited energy.
   <br />
   <br />
