@@ -27,19 +27,19 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
+	export const MANPATH: string;
+	export const GHOSTTY_RESOURCES_DIR: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const NVM_CD_FLAGS: string;
-	export const TERM: string;
 	export const SHELL: string;
+	export const TERM: string;
 	export const CPPFLAGS: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
 	export const TERM_PROGRAM_VERSION: string;
-	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
-	export const MallocNanoZone: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_local_prefix: string;
@@ -58,6 +58,7 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const npm_package_json: string;
 	export const _: string;
+	export const GHOSTTY_SHELL_FEATURES: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const __CFBundleIdentifier: string;
@@ -72,13 +73,16 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
-	export const SHLVL: string;
 	export const HOME: string;
+	export const SHLVL: string;
+	export const TERMINFO: string;
 	export const HOMEBREW_PREFIX: string;
 	export const npm_config_cache: string;
 	export const LESS: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
+	export const XDG_DATA_DIRS: string;
+	export const GHOSTTY_BIN_DIR: string;
 	export const BUN_INSTALL: string;
 	export const GOPATH: string;
 	export const NVM_BIN: string;
@@ -86,6 +90,7 @@ declare module '$env/static/private' {
 	export const PROMPT_EOL_MARK: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
+	export const OSLogRateLimit: string;
 	export const CONDA_CHANGEPS1: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
@@ -121,19 +126,19 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
+		MANPATH: string;
+		GHOSTTY_RESOURCES_DIR: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
 		NVM_CD_FLAGS: string;
-		TERM: string;
 		SHELL: string;
+		TERM: string;
 		CPPFLAGS: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
 		TERM_PROGRAM_VERSION: string;
-		ORIGINAL_XDG_CURRENT_DESKTOP: string;
-		MallocNanoZone: string;
 		COLOR: string;
 		npm_config_noproxy: string;
 		npm_config_local_prefix: string;
@@ -152,6 +157,7 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		npm_package_json: string;
 		_: string;
+		GHOSTTY_SHELL_FEATURES: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		__CFBundleIdentifier: string;
@@ -166,13 +172,16 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
-		SHLVL: string;
 		HOME: string;
+		SHLVL: string;
+		TERMINFO: string;
 		HOMEBREW_PREFIX: string;
 		npm_config_cache: string;
 		LESS: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
+		XDG_DATA_DIRS: string;
+		GHOSTTY_BIN_DIR: string;
 		BUN_INSTALL: string;
 		GOPATH: string;
 		NVM_BIN: string;
@@ -180,6 +189,7 @@ declare module '$env/dynamic/private' {
 		PROMPT_EOL_MARK: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
+		OSLogRateLimit: string;
 		CONDA_CHANGEPS1: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;

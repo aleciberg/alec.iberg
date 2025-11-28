@@ -33,14 +33,37 @@
 <style>
   .contact-container {
     text-align: center;
-    height: 30vh;
+    min-height: 30vh;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(26, 26, 26, 0.3));
+    border-top: 4px solid #1a1a1a;
   }
 
   .written-line {
-    color: #76abae;
-    padding: 20px;
+    color: #ffffff;
+    padding: 25px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 24px;
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.9),
+      0 0 15px rgba(139, 0, 0, 0.5);
   }
+
   .link {
-    color: white;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 
+      0 0 10px rgba(139, 0, 0, 0.8),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+    transition: text-shadow 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .link:hover {
+    text-shadow: 
+      0 0 20px rgba(139, 0, 0, 1),
+      0 0 30px rgba(139, 0, 0, 0.6),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+    border-bottom-color: #8b0000;
   }
 </style>

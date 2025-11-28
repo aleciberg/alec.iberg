@@ -28,9 +28,15 @@
 
 <style lang="postcss">
   :global(body) {
-    background-color: #222831;
+    background-color: #000000;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    font-family: 'MedievalSharp', cursive;
+    color: #ffffff;
+  }
+
+  :global(*) {
+    box-sizing: border-box;
   }
 </style>

@@ -44,7 +44,10 @@
     height: 10%;
     margin: auto;
     text-align: center;
-    border-bottom: 3px solid rgba(118, 171, 174, 0.5);
+    border-bottom: 4px solid #1a1a1a;
+    border-top: 4px solid #1a1a1a;
+    padding: 40px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(26, 26, 26, 0.2));
   }
   .skills-container {
     display: flex;
@@ -52,22 +55,39 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
   }
 
   .skills-container-small {
-    /* display: flex;
-    flex-wrap: row; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2px;
+    column-gap: 10px;
+    row-gap: 10px;
     height: 100%;
     overflow: scroll;
-    /* gap: 5px; */
+    padding: 20px;
   }
 
   h1 {
-    font-size: 48px;
-    color: #76abae;
+    font-size: 64px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: #ffffff;
+    text-shadow: 
+      3px 3px 0px #000000,
+      0 0 20px rgba(139, 0, 0, 0.5),
+      0 0 40px rgba(139, 0, 0, 0.3);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    filter: brightness(0.8) contrast(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .skill:hover {
+    transform: scale(1.1);
+    filter: brightness(1) contrast(1.3) drop-shadow(0 0 10px rgba(139, 0, 0, 0.5));
   }
 </style>

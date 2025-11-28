@@ -6,7 +6,7 @@
   Hello, my name is <span class={"attention"}>Alec Iberg.</span>
   <br />
   <br />
-  I am a Software Engineer specializing in Full Stack web development, with 6+ years developing beautiful front ends and robust back ends.
+  I am a Full Stack Software Engineer, currently working at <a href="https://immuta.com">Immuta</a> to advance the future of Data Provisioning.  
   <br />
   <br />
   {" "}
@@ -26,68 +26,85 @@
 
 <style>
   .bio-text {
-    color: #eeeeee;
+    color: #e0e0e0;
     font-size: 24px;
-    margin: 20px;
-    border-bottom: 3px solid rgba(118, 171, 174, 0.5);
-    border-top: 3px solid rgba(118, 171, 174, 0.5);
+    font-family: 'MedievalSharp', cursive;
+    margin: 40px;
+    padding: 30px;
+    border-bottom: 4px solid #1a1a1a;
+    border-top: 4px solid #1a1a1a;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.3), rgba(0, 0, 0, 0.3));
+    box-shadow: 
+      inset 0 0 30px rgba(0, 0, 0, 0.5),
+      0 0 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
   .attention {
-    color: #76abae;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 
+      0 0 10px rgba(139, 0, 0, 0.5),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
   }
   .link {
     text-decoration: none;
-    color: #76abae;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
   }
 
   @keyframes blink {
     0% { opacity: 1; }
-    50% { opacity: 0; }
+    50% { opacity: 0.3; }
     100% { opacity: 1; }
 }
 
 .blinking-text {
-    color: #76abae;
-    animation: blink 1.5s infinite;
-    border: 2px solid #f1fa8c;
+    color: #ffffff;
+    animation: blink 2s infinite;
+    border: 2px solid #8b0000;
     text-align: center;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
 }
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
 
 .pulsing-text {
-    color: #76abae;
-    animation: pulse 2s infinite;
+    color: #ffffff;
+    animation: pulse 3s infinite;
+    text-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
 }
 
 @keyframes border-flash {
-    0% { border-color: #76abae; }
-    50% { border-color: white; }
-    100% { border-color: #76abae; }
+    0% { border-color: #1a1a1a; }
+    50% { border-color: #8b0000; }
+    100% { border-color: #1a1a1a; }
 }
 
 .highlighted-text {
-    background-color: #222831;
-    color: white;
+    background-color: #0a0a0a;
+    color: #ffffff;
     padding: 5px;
-    border: 2px solid #76abae;
-    animation: border-flash 2s infinite;
+    border: 2px solid #8b0000;
+    animation: border-flash 3s infinite;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
 }
 
 @keyframes underline-color-change {
-    0% { text-decoration-color: #76abae; }
-    50% { text-decoration-color: white; }
-    100% { text-decoration-color: #76abae; }
+    0% { text-decoration-color: #ffffff; }
+    50% { text-decoration-color: #8b0000; }
+    100% { text-decoration-color: #ffffff; }
 }
 
 .underline-color-change {
-    color: white;
+    color: #ffffff;
     text-decoration: underline;
-    text-decoration-color: #76abae;
-    animation: underline-color-change 2s infinite;
+    text-decoration-color: #ffffff;
+    animation: underline-color-change 3s infinite;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
 }
 </style>
