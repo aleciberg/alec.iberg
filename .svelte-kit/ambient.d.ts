@@ -83,6 +83,7 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const XDG_DATA_DIRS: string;
 	export const GHOSTTY_BIN_DIR: string;
+	export const GITHUB_TOKEN: string;
 	export const BUN_INSTALL: string;
 	export const GOPATH: string;
 	export const NVM_BIN: string;
@@ -182,6 +183,7 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		XDG_DATA_DIRS: string;
 		GHOSTTY_BIN_DIR: string;
+		GITHUB_TOKEN: string;
 		BUN_INSTALL: string;
 		GOPATH: string;
 		NVM_BIN: string;

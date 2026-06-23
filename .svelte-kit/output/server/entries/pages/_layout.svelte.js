@@ -1,7 +1,7 @@
 import { c as create_ssr_component } from "../../chunks/index.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "body{background-color:#222831;background-size:cover;height:100vh;width:100vw}",
+  code: "body{background-color:#000000;background-size:cover;height:100vh;width:100vw;font-family:'MedievalSharp', cursive;color:#ffffff}*{box-sizing:border-box}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {

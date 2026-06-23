@@ -2,6 +2,7 @@
   import Skill from "$lib/components/Skill.svelte";
 
   let innerWidth;
+  $: large = innerWidth >= 1080;
 
   const skills = [
     { name: "TypeScript", image: "/images/typescript.png" },
@@ -23,12 +24,10 @@
 
 <div class="skills-holder">
   <h1>Skills</h1>
-  <div
-    class={innerWidth < 1080 ? "skills-container-small" : "skills-container"}
-  >
+  <div class={large ? "skills-container" : "skills-container-small"}>
     {#each skills as skill}
       <div class="skill">
-        <Skill {skill} />
+        <Skill {skill} {large} />
       </div>
     {/each}
   </div>
@@ -82,12 +81,10 @@
   }
 
   .skill {
-    filter: brightness(0.8) contrast(1.2);
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .skill:hover {
     transform: scale(1.1);
-    filter: brightness(1) contrast(1.3) drop-shadow(0 0 10px rgba(139, 0, 0, 0.5));
   }
 </style>

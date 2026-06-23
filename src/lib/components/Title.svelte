@@ -1,6 +1,5 @@
 <script>
-    import { base } from '$app/paths';
-  console.log("in play");
+  import { base } from '$app/paths';
 </script>
 
 <div class="title-container">
@@ -9,6 +8,7 @@
     <img class="image" src={`${base}/images/alec.png`} alt="Alec" />
   </div>
   <h1 class="title-bar">Alec Iberg</h1>
+  <p class="tagline">Full Stack Engineer · Go · TypeScript · Cloud</p>
 </div>
 
 <style>
@@ -32,8 +32,8 @@
 
   .image-glow {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 390px;
+    height: 390px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(139, 0, 0, 0.3) 0%, transparent 70%);
     animation: pulse-glow 3s ease-in-out infinite;
@@ -62,23 +62,21 @@
       0 0 40px rgba(139, 0, 0, 0.3),
       inset 0 0 30px rgba(0, 0, 0, 0.5);
     z-index: 1;
-    filter: 
-      grayscale(60%) 
-      contrast(1.4) 
-      brightness(0.7) 
-      saturate(0.3)
-      sepia(20%);
+    filter:
+      grayscale(30%)
+      contrast(1.1)
+      brightness(0.85)
+      saturate(0.6);
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .image:hover {
     transform: scale(1.05);
-    filter: 
-      grayscale(40%) 
-      contrast(1.5) 
-      brightness(0.75) 
-      saturate(0.4)
-      sepia(30%);
+    filter:
+      grayscale(15%)
+      contrast(1.15)
+      brightness(0.9)
+      saturate(0.7);
     box-shadow: 
       0 0 30px rgba(0, 0, 0, 0.9),
       0 0 60px rgba(139, 0, 0, 0.5),
@@ -98,6 +96,16 @@
     text-align: center;
   }
 
+  .tagline {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
   @media (max-width: 768px) {
     .image {
       height: 250px;
@@ -105,12 +113,16 @@
     }
 
     .image-glow {
-      width: 300px;
-      height: 300px;
+      width: 290px;
+      height: 290px;
     }
 
     .title-bar {
       font-size: 48px;
+    }
+
+    .tagline {
+      font-size: 13px;
     }
   }
 </style>

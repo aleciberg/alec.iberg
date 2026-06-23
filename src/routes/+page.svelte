@@ -11,8 +11,11 @@
   <div class="bio-container">
     <Bio />
   </div>
-  <div class="skills-container">
+  <div id="skills" class="skills-container">
     <Skills />
+  </div>
+  <div id="projects">
+    <Projects />
   </div>
   <div class="video-container">
     <h2 class="video-title">Current Favorite Music</h2>
@@ -27,8 +30,9 @@
       ></iframe>
     </div>
   </div>
-  <Projects />
-  <Contact />
+  <div id="contact">
+    <Contact />
+  </div>
 </div>
 
 <style>
@@ -48,6 +52,12 @@
 
   .skills-container {
     width: 100%;
+  }
+
+  #skills,
+  #projects,
+  #contact {
+    scroll-margin-top: 60px;
   }
 
   .video-container {
@@ -82,24 +92,19 @@
   }
 
   .video-wrapper {
-    position: relative;
     width: 100%;
     max-width: 900px;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    box-shadow: 
+    aspect-ratio: 16 / 9;
+    box-shadow:
       0 0 30px rgba(0, 0, 0, 0.8),
-      0 0 60px rgba(139, 0, 0, 0.3),
-      inset 0 0 40px rgba(0, 0, 0, 0.5);
+      0 0 60px rgba(139, 0, 0, 0.3);
     border: 5px solid #1a1a1a;
   }
 
   .youtube-embed {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    display: block;
     filter: brightness(0.85) contrast(1.1);
   }
 </style>
