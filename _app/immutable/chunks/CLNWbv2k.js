@@ -1,0 +1,1 @@
+import{n as e}from"./CiBGyTMY.js";var t=async(t,n)=>{let r=t.innerHTML.replaceAll(`&amp;`,`&`);for(let i=r.length-1;i>=0;i--){let a=r[i];a===`>`&&(i=r.lastIndexOf(`<`,i)),!(new Blob([a]).size>1)&&(t.innerHTML=r.slice(0,i),await e(n.unwriteInterval?n.unwriteInterval:n.interval))}t.innerHTML=r};export{t};
