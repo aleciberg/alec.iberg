@@ -1,79 +1,77 @@
-<script>
-  import { page } from "$app/stores";
+<script lang="ts">
+  import type { Snippet } from 'svelte';
+  import { page } from '$app/state';
+
+  let { children }: { children: Snippet } = $props();
 
   const links = [
-    { label: "About",    href: "/"         },
-    { label: "Skills",   href: "/#skills"  },
-    { label: "Projects", href: "/#projects"},
-    { label: "Contact",  href: "/#contact" },
-    { label: "Resume",   href: "/Resume"   },
-    { label: "Links",    href: "/Links"    },
+    { label: 'About', href: '/' },
+    { label: 'Skills', href: '/#skills' },
+    { label: 'Projects', href: '/#projects' },
+    { label: 'Contact', href: '/#contact' },
+    { label: 'Resume', href: '/Resume' },
   ];
 
-  let innerWidth = 901;
-  let menuOpen = false;
+  const description =
+    'Alec Iberg is a Portland-based full stack software engineer working with TypeScript, Node, Angular, Go, and AWS.';
+
+  let menuOpen = $state(false);
+
+  function isActive(href: string): boolean {
+    if (href === '/') return page.url.pathname === '/' && !page.url.hash;
+    if (href.startsWith('/#')) return page.url.hash === href.slice(1);
+    return page.url.pathname === href;
+  }
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:head>
+  <title>Alec Iberg | Full Stack Engineer</title>
+  <meta name="description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alec Iberg | Full Stack Engineer" />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content="https://aleciberg.com" />
+  <meta property="og:image" content="https://aleciberg.com/images/alec.png" />
+  <meta name="twitter:card" content="summary" />
+</svelte:head>
+
+{#snippet navLinks()}
+  {#each links as { label, href } (href)}
+    <a {href} class="nav-link" class:active={isActive(href)} onclick={() => (menuOpen = false)}
+      >{label}</a
+    >
+  {/each}
+{/snippet}
 
 <nav class="top-nav">
   <div class="nav-inner">
     <a href="/" class="nav-brand">Alec Iberg</a>
-    {#if innerWidth >= 600}
-      <div class="nav-links">
-        {#each links as { label, href }}
-          {@const isActive =
-            href === "/"
-              ? $page.url.pathname === "/" && !$page.url.hash
-              : href.startsWith("/#")
-                ? $page.url.hash === href.slice(1)
-                : $page.url.pathname === href}
-          <a
-            {href}
-            class="nav-link"
-            class:active={isActive}
-            on:click={() => (menuOpen = false)}
-          >{label}</a>
-        {/each}
-      </div>
-    {:else}
-      <button
-        class="hamburger"
-        on:click={() => (menuOpen = !menuOpen)}
-        aria-label="Toggle menu"
-      >{menuOpen ? "✕" : "☰"}</button>
-    {/if}
+    <div class="nav-links">
+      {@render navLinks()}
+    </div>
+    <button
+      class="hamburger"
+      onclick={() => (menuOpen = !menuOpen)}
+      aria-label="Toggle menu"
+      aria-expanded={menuOpen}>{menuOpen ? '✕' : '☰'}</button
+    >
   </div>
-  {#if innerWidth < 600 && menuOpen}
+  {#if menuOpen}
     <div class="nav-dropdown">
-      {#each links as { label, href }}
-        {@const isActive =
-          href === "/"
-            ? $page.url.pathname === "/" && !$page.url.hash
-            : href.startsWith("/#")
-              ? $page.url.hash === href.slice(1)
-              : $page.url.pathname === href}
-        <a
-          {href}
-          class="nav-link"
-          class:active={isActive}
-          on:click={() => (menuOpen = false)}
-        >{label}</a>
-      {/each}
+      {@render navLinks()}
     </div>
   {/if}
 </nav>
 
 <div class="page-content">
-  <slot />
+  {@render children()}
 </div>
 
-<style lang="postcss">
+<style>
   :global(body) {
     background-color: #000000;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    margin: 0;
+    min-height: 100vh;
     font-family: 'MedievalSharp', cursive;
     color: #ffffff;
   }
@@ -129,7 +127,10 @@
     letter-spacing: 1px;
     padding: 6px 10px;
     border: 1px solid transparent;
-    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      text-shadow 0.2s ease;
   }
 
   .nav-link:hover,
@@ -140,6 +141,7 @@
   }
 
   .hamburger {
+    display: none;
     background: none;
     border: 1px solid #8b0000;
     color: #ffffff;
@@ -161,6 +163,22 @@
     padding: 12px 24px;
     border: none;
     border-bottom: 1px solid #1a1a1a;
+  }
+
+  @media (max-width: 599px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .nav-dropdown {
+      display: none;
+    }
   }
 
   .page-content {

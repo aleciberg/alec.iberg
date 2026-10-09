@@ -1,19 +1,15 @@
-<script>
-  import { base } from '$app/paths';
-</script>
-
 <div class="title-container">
   <div class="image-wrapper">
     <div class="image-glow"></div>
-    <img class="image" src={`${base}/images/alec.png`} alt="Alec" />
+    <img class="image" src="/images/alec.png" alt="Alec" />
   </div>
   <h1 class="title-bar">Alec Iberg</h1>
-  <p class="tagline">Full Stack Engineer · Go · TypeScript · Cloud</p>
+  <p class="tagline">Full Stack Engineer | TypeScript | Node | Angular</p>
 </div>
 
 <style>
   .title-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +37,8 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 0.5;
       transform: scale(1);
     }
@@ -57,27 +54,21 @@
     width: 350px;
     border-radius: 50%;
     border: 5px solid #1a1a1a;
-    box-shadow: 
+    box-shadow:
       0 0 20px rgba(0, 0, 0, 0.8),
       0 0 40px rgba(139, 0, 0, 0.3),
       inset 0 0 30px rgba(0, 0, 0, 0.5);
     z-index: 1;
-    filter:
-      grayscale(30%)
-      contrast(1.1)
-      brightness(0.85)
-      saturate(0.6);
-    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(30%) contrast(1.1) brightness(0.85) saturate(0.6);
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
   }
 
   .image:hover {
     transform: scale(1.05);
-    filter:
-      grayscale(15%)
-      contrast(1.15)
-      brightness(0.9)
-      saturate(0.7);
-    box-shadow: 
+    filter: grayscale(15%) contrast(1.15) brightness(0.9) saturate(0.7);
+    box-shadow:
       0 0 30px rgba(0, 0, 0, 0.9),
       0 0 60px rgba(139, 0, 0, 0.5),
       inset 0 0 40px rgba(0, 0, 0, 0.6);
@@ -87,7 +78,7 @@
     color: #ffffff;
     font-size: 72px;
     font-family: 'UnifrakturMaguntia', cursive;
-    text-shadow: 
+    text-shadow:
       3px 3px 0px #000000,
       0 0 20px rgba(139, 0, 0, 0.5),
       0 0 40px rgba(139, 0, 0, 0.3);

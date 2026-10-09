@@ -1,9 +1,9 @@
-<script>
-  import Title from "../lib/components/Title.svelte";
-  import Bio from "../lib/components/Bio.svelte";
-  import Skills from "../lib/components/Skills.svelte";
-  import Projects from "../lib/components/Projects.svelte";
-  import Contact from "../lib/components/Contact.svelte";
+<script lang="ts">
+  import Title from '$lib/components/Title.svelte';
+  import Bio from '$lib/components/Bio.svelte';
+  import Skills from '$lib/components/Skills.svelte';
+  import Projects from '$lib/components/Projects.svelte';
+  import Contact from '$lib/components/Contact.svelte';
 </script>
 
 <div class="base-page-container">
@@ -37,7 +37,7 @@
 
 <style>
   .base-page-container {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@
     font-size: 48px;
     font-family: 'UnifrakturMaguntia', cursive;
     color: #ffffff;
-    text-shadow: 
+    text-shadow:
       3px 3px 0px #000000,
       0 0 20px rgba(139, 0, 0, 0.5),
       0 0 40px rgba(139, 0, 0, 0.3);

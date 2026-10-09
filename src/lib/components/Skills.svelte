@@ -1,78 +1,65 @@
-<script>
-  import Skill from "$lib/components/Skill.svelte";
+<script lang="ts">
+  import Skill from '$lib/components/Skill.svelte';
+  import type { Skill as SkillData } from '$lib/types';
 
-  let innerWidth;
-  $: large = innerWidth >= 1080;
-
-  const skills = [
-    { name: "TypeScript", image: "/images/typescript.png" },
-    { name: "React", image: "/images/react.png" },
-    { name: "Node", image: "/images/node.png" },
-    { name: "GoLang", image: "/images/golang.png" },
-    { name: "AWS", image: "/images/aws.png" },
-    { name: "Postgres", image: "/images/postgres.png" },
-    { name: "JavaScript", image: "/images/js.png" },
-    { name: "Svelte", image: "/images/svelte.png" },
-    { name: "Docker", image: "/images/docker.png" },
-    { name: "GCP", image: "/images/gcp.png" },
-    { name: "Git", image: "/images/gitbash.png" },
-    { name: "CI/CD", image: "/images/gitlab-ci.png" },
+  const skills: SkillData[] = [
+    { name: 'TypeScript', image: '/images/typescript.png' },
+    { name: 'Node', image: '/images/node.png' },
+    { name: 'Angular', image: '/images/angular.png' },
+    { name: 'Postgres', image: '/images/postgres.png' },
+    { name: 'GoLang', image: '/images/golang.png' },
+    { name: 'React', image: '/images/react.png' },
+    { name: 'AWS', image: '/images/aws.png' },
+    { name: 'JavaScript', image: '/images/js.png' },
+    { name: 'Svelte', image: '/images/svelte.png' },
+    { name: 'Docker', image: '/images/docker.png' },
+    { name: 'Git', image: '/images/gitbash.png' },
+    { name: 'CI/CD', image: '/images/gitlab-ci.png' },
   ];
 </script>
 
-<svelte:window bind:innerWidth />
-
 <div class="skills-holder">
   <h1>Skills</h1>
-  <div class={large ? "skills-container" : "skills-container-small"}>
-    {#each skills as skill}
+  <div class="skills-container">
+    {#each skills as skill (skill.name)}
       <div class="skill">
-        <Skill {skill} {large} />
+        <Skill {skill} />
       </div>
     {/each}
   </div>
-  <br />
-  <br />
-  <br />
-  <br />
 </div>
 
 <style>
   .skills-holder {
-    width: 100vw;
-    height: 10%;
-    margin: auto;
+    width: 100%;
     text-align: center;
     border-bottom: 4px solid #1a1a1a;
     border-top: 4px solid #1a1a1a;
-    padding: 40px 0;
+    padding: 40px 0 100px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(26, 26, 26, 0.2));
   }
   .skills-container {
-    display: flex;
-    overflow: scroll;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
   }
 
-  .skills-container-small {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    height: 100%;
-    overflow: scroll;
-    padding: 20px;
+  @media (min-width: 1080px) {
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   h1 {
     font-size: 64px;
     font-family: 'UnifrakturMaguntia', cursive;
     color: #ffffff;
-    text-shadow: 
+    text-shadow:
       3px 3px 0px #000000,
       0 0 20px rgba(139, 0, 0, 0.5),
       0 0 40px rgba(139, 0, 0, 0.3);
